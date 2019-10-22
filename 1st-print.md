@@ -17,7 +17,7 @@
 
 ## 213 页
 
-代码清单 8-2 的 ``calculate_index()`` 方法最后一句，原文：
+代码清单 8-2 的 ``calculate_index()`` 函数最后一句，原文：
 
 >  ``row*row_num+col``
 
