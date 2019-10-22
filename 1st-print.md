@@ -15,6 +15,8 @@
 
 图 8-12 上方的第一个位索引应为 ``0`` 而不是 ``1`` 。
 
+![](./images/IMAGE_MAP_ZERO_ONE_MATRIX_TO_BITMAP.png)
+
 ## 213 页
 
 代码清单 8-2 的 ``calculate_index()`` 函数最后一句，原文：
