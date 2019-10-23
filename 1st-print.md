@@ -105,7 +105,7 @@ def is_following(self, target):
 
 ## 212 页
 
-图 8-12 上方的第一个位索引应为 ``0`` 而不是 ``1`` 。
+图 8-12 上方的第一个位索引应为 ``0`` 而不是 ``1`` ，以下是正确的图片：
 
 ![](./images/IMAGE_MAP_ZERO_ONE_MATRIX_TO_BITMAP.png)
 
