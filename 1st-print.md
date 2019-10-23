@@ -5,7 +5,7 @@
 
 ## 52 页
 
-图 3-3 最后一幅图片应为：
+图 3-3 最后一幅子图，在 ``title`` 和 ``content`` 两个字段之间缺少了分割线，以下是正确的代码：
 
 ![](./images/IMAGE_HSET_5.png)
 
@@ -121,10 +121,21 @@ class Graph:
 
 >  ``row*col_num+col``
 
+以下是完整的函数代码：
+
+```python
+def calculate_index(row, col, row_num, col_num):
+if not (row < row_num):
+    raise ValueError("row out of range")
+if not (col < col_num):
+    raise ValueError("col out of range")
+return row*col_num+col
+```
+
 
 
 ## 445 页
 
-图 18-5 下方的第二个图中，“发送写命令 W”下面的线应为灰色，以下是正确的图片：
+图 18-5 下方的第二个子图中，“发送写命令 W”下面的线应为灰色，以下是正确的图片：
 
 ![IMAGE_REPLICATE_CMD](./images/IMAGE_REPLICATE_CMD.png)
