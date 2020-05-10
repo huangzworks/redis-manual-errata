@@ -132,7 +132,30 @@ def calculate_index(row, col, row_num, col_num):
     return row*col_num+col
 ```
 
+## 276 页
 
+代码清单 10-2 的 ``read_message()`` 函数第一句，原文：
+
+> ``reply = self.client.xreadgroup(self.group, consumer, {self.stream:} count)``
+
+应改为：
+
+> ``reply = self.client.xreadgroup(self.group, consumer, {self.stream: id}, count)``
+
+以下是完整的函数代码：
+
+```python
+def read_message(self, consumer, id, count=10):
+    """
+    从消费者组中读取消息
+    """
+    reply = self.client.xreadgroup(self.group, consumer, {self.stream: id}, count)
+    if len(reply) == 0:
+        return list()
+    else:
+        messages = get_message_from_nested_list(reply)
+        return reconstruct_message_list(messages)
+```
 
 ## 445 页
 
